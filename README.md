@@ -32,21 +32,21 @@ assignments/: Coding tasks and challenges
 resources/: Helpful links, documentation, and references
 
 ## 🧠 Who This Is For
-Beginners looking to start their JavaScript journey
+-Beginners looking to start their JavaScript journey
 
-Self-taught developers aiming to strengthen their core JS skills
+-Self-taught developers aiming to strengthen their core JS skills
 
-Frontend learners preparing for frameworks like React or Vue
+-Frontend learners preparing for frameworks like React or Vue
 
-Anyone who prefers project-based learning
+-Anyone who prefers project-based learning
 
 ## ✅ How to Use
-Clone the repository
+1. Clone the repository
 
-Start with the lessons/ folder and go through the topics in order
+2. Start with the lessons/ folder and go through the topics in order
 
-After every few lessons, try building the project in the projects/ folder
+3. After every few lessons, try building the project in the projects/ folder
 
-Test your understanding with quizzes and assignments
+4. Test your understanding with quizzes and assignments
 
-Submit pull requests if you'd like to contribute!
+5. Submit pull requests if you'd like to contribute!

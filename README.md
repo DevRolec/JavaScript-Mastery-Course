@@ -50,3 +50,34 @@ resources/: Helpful links, documentation, and references
 4. Test your understanding with quizzes and assignments
 
 5. Submit pull requests if you'd like to contribute!
+
+# 🎓 JavaScript Mastery Course (Beginner → Advanced)
+## 📦 Module 1: Getting Started with JavaScript (Beginner)
+
+Goal: Understand what JavaScript is, how to run it, and learn the basics.
+
+✅ Topics:
+What is JavaScript? (History, Use Cases)
+
+Setting up the environment (Browser, Node.js, VS Code)
+
+Writing your first script (console.log, linking JS to HTML)
+
+Variables: var, let, const
+
+Data types: string, number, boolean, null, undefined
+
+Operators: arithmetic, assignment, comparison, logical
+
+Comments & code structure
+
+🧠 Example:
+js
+Copy
+Edit
+let name = "Sam";
+console.log("Hello, " + name);
+🛠️ Practice Project:
+Greeting Card Generator: Ask for user input (prompt), show a custom message on the screen.
+
+

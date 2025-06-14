@@ -81,6 +81,32 @@ console.log("Hello, " + name);
 🛠️ Practice Project:
 Greeting Card Generator: Ask for user input (prompt), show a custom message on the screen.
 ---
+```js
+//MOST PRACTICES IN JS
+//1. Control Flow and Functions
+//2. Arrays
+//3. Objects
+//4. DOM
+//5. Events
+//6. Local Storage
+//7. Fetch
+//8. Async/Await
+//9. Regular Expressions
+//10. JSON
+//11. Error Handling
+```
+### 🔹 What is Control Flow?
+Control Flow is the order in which individual statements, 
+instructions, or function calls are executed or evaluated in a program.
+
+By default, JavaScript executes code from top to bottom, 
+left to right, but you can alter the flow using control structures like:
+
+Conditionals (if, else, switch)
+
+Loops (for, while, do...while)
+
+Function calls (function())
 ## 🧩 Module 2: Control Flow & Functions
 
 ✅ Topics:
@@ -99,6 +125,7 @@ function greet(name) {
 }
 console.log(greet("Ada"));
 ```
+---
 🛠️ Practice Project:
 Guess the Number Game: Random number guessing with limited attempts.
 ---

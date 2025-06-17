@@ -269,10 +269,10 @@ console.log(animals.length); // 3
 🔹 Array Methods
 1. ✅ Adding and Removing
 Method	Description
-push()	Add to end
-pop()	Remove from end
-unshift()	Add to start
-shift()	Remove from start
+- push()	Add to end
+- pop()	Remove from end
+- unshift()	Add to start
+- shift()	Remove from start
 
 ```js
 let items = ["pen", "pencil"];

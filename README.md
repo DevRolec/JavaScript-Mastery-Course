@@ -173,6 +173,197 @@ document.querySelector("button").addEventListener("click", () => {
   alert("Button clicked!");
 });
 ```
+## 📘 JavaScript Arrays – Full Lesson
+🔹 What is an Array?
+An array is a special variable that can hold multiple values at once
+```js
+let fruits = ["apple", "banana", "orange"];
+```
+Here, fruits is an array that holds three string values.
+
+🔹 Why Use Arrays?
+To store lists of items.
+
+To group related data.
+
+To iterate through items using loops.
+
+To efficiently perform operations like add, remove, filter, and sort items.
+### 🔹 Creating Arrays
+```js
+let emptyArray = []; // empty array
+
+let numbers = [10, 20, 30, 40];
+
+let mixed = ["hello", 42, true, null];
+```
+You can also use the Array constructor:
+```js
+let scores = new Array(100, 200, 300);
+```
+An array can contain objects like this
+```js
+const people = [
+    {name: "Sochima", age: 22},
+    {name: "Uzoma", age: 22},
+    {name: "Roland", age: 75}
+]
+```
+✅ Accessing Objects in the Array
+1. Access the whole object by index:
+```js
+console.log(people[0]); 
+// Output: { name: "Sochima", age: 25 }
+```
+2. Access a property of an object:
+```js
+console.log(people[1].name); 
+// Output: Uzoma
+console.log(people[2].age); 
+// Output: 75
+```
+### 🔁 Loop Through Objects in an Array
+You can use loops like for, for...of, or forEach.
+
+Example using forEach:
+```js
+people.forEach(person => {
+  console.log(person.name + " is " + person.age + " years old.");
+});
+```
+🔎 Find an Object by a Property
+Use .find() to get the first object matching a condition:
+```js
+const result = people.find(person => person.name === "Charlie");
+console.log(result);
+// Output: { name: "Charlie", age: 35 }
+```
+### 🔁 Filter Multiple Matches
+```js
+const adults = people.filter(person => person.age >= 30);
+console.log(adults);
+// Output: [ { name: 'Bob', age: 30 }, { name: 'Charlie', age: 35 } ]
+```
+🔸 Note: Using square brackets [] is preferred for simplicity and readability.
+
+🔹 Accessing Elements
+Use indexing (starting from 0):
+
+```js
+let cars = ["Toyota", "BMW", "Tesla"];
+console.log(cars[0]); // Toyota
+console.log(cars[2]); // Tesla
+```
+🔹 Changing Values
+```js
+cars[1] = "Mercedes";
+console.log(cars); // ["Toyota", "Mercedes", "Tesla"]
+```
+🔹 Array Properties
+length
+Gives the number of elements in the array:
+```js
+let animals = ["dog", "cat", "rabbit"];
+console.log(animals.length); // 3
+```
+🔹 Array Methods
+1. ✅ Adding and Removing
+Method	Description
+push()	Add to end
+pop()	Remove from end
+unshift()	Add to start
+shift()	Remove from start
+
+```js
+let items = ["pen", "pencil"];
+items.push("eraser");      // ["pen", "pencil", "eraser"]
+items.pop();               // ["pen", "pencil"]
+items.unshift("sharpener"); // ["sharpener", "pen", "pencil"]
+items.shift();             // ["pen", "pencil"]
+```
+2. 🔄 Iterating Arrays
+for loop
+```js
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+```
+for...of loop
+```js
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+forEach()
+```
+```js
+fruits.forEach(function(fruit) {
+  console.log(fruit);
+});
+```
+3. 🔍 Searching in Arrays
+```js
+let nums = [1, 2, 3, 4, 5];
+
+console.log(nums.includes(3)); // true
+console.log(nums.indexOf(4)); // 3
+```
+4. 🔧 Other Useful Methods
+Method	Description
+join()	Converts to string with separator
+slice()	Extracts part of the array
+splice()	Adds/removes items at specific index
+concat()	Combines arrays
+reverse()	Reverses the array
+sort()	Sorts elements (lexicographically)
+map()	Returns a new array by applying a function
+filter()	Returns a new array with matching items
+
+🧪 Examples
+Example 1: Join
+```js
+let colors = ["red", "blue", "green"];
+console.log(colors.join(", ")); // "red, blue, green"
+```
+Example 2: Slice
+```js
+let sliced = colors.slice(0, 2); // ["red", "blue"]
+```
+Example 3: Splice
+```js
+colors.splice(1, 1, "yellow"); // removes 1 item at index 1, adds "yellow"
+console.log(colors); // ["red", "yellow", "green"]
+```
+💡 Practice Exercises
+1. Create an array of 5 student names and print each one using a for...of loop.
+2. Create a number array [10, 20, 30, 40, 50]:
+Add 60 to the end.
+
+Remove the first element.
+
+Print the new array.
+
+3. Create an array of prices [100, 200, 300], then use map() to return a new array with a 10% discount applied.
+4. Filter out numbers greater than 25 from [10, 25, 30, 5, 40].
+## 🧠 Mini Quiz
+What does array.length return?
+
+What's the difference between push() and unshift()?
+
+How do you remove the second item in an array?
+
+🎯 Challenge Task
+Build a program that:
+
+Asks a user to enter 5 favorite foods using prompt().
+
+Stores them in an array.
+
+Sorts them alphabetically.
+
+Prints the sorted list using alert() or console.log().
+
+
+---
 🛠️ Practice Project:
 Interactive Quiz App: Show questions, capture answers, show score.
 ---

@@ -309,14 +309,14 @@ console.log(nums.indexOf(4)); // 3
 ```
 4. 🔧 Other Useful Methods
 Method	Description
-join()	Converts to string with separator
-slice()	Extracts part of the array
-splice()	Adds/removes items at specific index
-concat()	Combines arrays
-reverse()	Reverses the array
-sort()	Sorts elements (lexicographically)
-map()	Returns a new array by applying a function
-filter()	Returns a new array with matching items
+- join()	Converts to string with separator
+- slice()	Extracts part of the array
+- splice()	Adds/removes items at specific index
+- concat()	Combines arrays
+- reverse()	Reverses the array
+- sort()	Sorts elements (lexicographically)
+- map()	Returns a new array by applying a function
+- filter()	Returns a new array with matching items
 
 🧪 Examples
 Example 1: Join

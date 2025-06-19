@@ -361,8 +361,165 @@ Stores them in an array.
 Sorts them alphabetically.
 
 Prints the sorted list using alert() or console.log().
+---
+## 📘 JavaScript Objects – Full Lesson
+🔹 What is an Object?
+In JavaScript, an object is a data structure that lets you store key-value pairs.
 
+```
+let person = {
+  name: "Alice",
+  age: 25,
+  isStudent: true
+};
+name, age, and isStudent are keys (also called properties).
 
+"Alice", 25, and true are their values.
+```
+🔹 Why Use Objects?
+To group related data together.
+
+To model real-world things (like a user, product, car).
+
+To allow flexible data access using property names.
+
+To store functions (methods) inside data.
+
+🔹 Creating Objects
+Method 1: Object Literal (most common)
+```js
+let car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2020
+};
+```
+Method 2: Using new Object()
+```js
+let user = new Object();
+user.name = "John";
+user.age = 30;
+```
+🔹 Accessing Object Properties
+Dot Notation
+```js
+console.log(car.brand); // "Toyota"
+```
+Bracket Notation
+```js
+console.log(car["model"]); // "Corolla"
+```
+Use bracket notation when the property name is dynamic or has special characters.
+
+🔹 Updating and Adding Properties
+```js
+car.year = 2021;           // Update
+car.color = "blue";        // Add new
+```
+🔹 Deleting Properties
+```js
+delete car.color;
+```
+🔹 Nested Objects
+```js
+let student = {
+  name: "Lucy",
+  grades: {
+    math: 90,
+    science: 85
+  }
+};
+
+console.log(student.grades.math); // 90
+```
+🔹 Objects with Methods
+You can store functions in objects:
+
+```js
+let user = {
+  name: "Mike",
+  greet: function () {
+    console.log("Hi, I'm " + this.name);
+  }
+};
+
+user.greet(); // Hi, I'm Mike
+```
+Use this to refer to the object itself.
+
+🔹 Looping Through an Object
+for...in loop
+```js
+for (let key in car) {
+  console.log(key + ": " + car[key]);
+}
+```
+🔹 Object Built-in Methods
+Method	Description
+Object.keys()	Returns an array of keys
+Object.values()	Returns an array of values
+Object.entries()	Returns an array of key-value pairs
+hasOwnProperty()	Checks if key exists directly on object
+
+```js
+let keys = Object.keys(car);     // ["brand", "model", "year"]
+let values = Object.values(car); // ["Toyota", "Corolla", 2020]
+```
+🔹 Object Destructuring
+```js
+let { brand, model } = car;
+console.log(brand); // "Toyota"
+```
+🔹 Object.freeze() vs Object.seal()
+Method	Can Modify Values?	Can Add/Delete?
+freeze()	❌ No	❌ No
+seal()	✅ Yes	❌ No
+```js
+Object.freeze(car);
+car.brand = "Honda"; // Won't change
+```
+🧪 Examples
+Example 1: Create and Display a Book Object
+```js
+let book = {
+  title: "JS Basics",
+  author: "Jane Doe",
+  pages: 200
+};
+
+console.log(`Book: ${book.title} by ${book.author}`);
+```
+Example 2: Check if Key Exists
+```js
+console.log("model" in car); // true
+```
+🧠 Practice Exercises
+1. Create an object movie with keys: title, director, year, and rating.
+2. Add a method describe that prints movie info.
+3. Loop through the object and print each key and value.
+4. Create a nested object profile with keys like name, age, and contact (which itself has email, phone).
+🎯 Challenge Task
+Create a program that:
+
+Stores a list of users as an array of objects.
+
+Each user object has name, email, and loginCount.
+
+Write a function to:
+
+Add a new user.
+
+Print all user names.
+
+Find user by email.
+
+```js
+let users = [];
+
+function addUser(name, email) {
+  users.push({ name, email, loginCount: 0 });
+}
+```
 ---
 🛠️ Practice Project:
 Interactive Quiz App: Show questions, capture answers, show score.

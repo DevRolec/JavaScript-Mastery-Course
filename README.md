@@ -520,6 +520,170 @@ function addUser(name, email) {
   users.push({ name, email, loginCount: 0 });
 }
 ```
+📘 JavaScript DOM (Document Object Model) Lesson
+✅ What is the DOM?
+DOM stands for Document Object Model.
+
+It is a programming interface for HTML and XML documents.
+
+The DOM represents the document as a tree structure where each node is an object representing a part of the page (elements, attributes, text).
+
+🧱 DOM Tree Example:
+```html
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+```
+This is converted into a tree-like structure in JavaScript.
+
+📌 Accessing the DOM
+You can use the document object in JS to access and manipulate HTML.
+```js
+console.log(document.title);   // Shows the title of the page
+console.log(document.body);    // Access the body element
+```
+📍 Selecting Elements
+1. getElementById()
+```html
+<p id="demo">Hello</p>
+
+<script>
+  const el = document.getElementById("demo");
+  console.log(el.textContent); // Output: Hello
+</script>
+```
+2. getElementsByClassName()
+```html
+<p class="text">One</p>
+<p class="text">Two</p>
+
+<script>
+  const texts = document.getElementsByClassName("text");
+  console.log(texts[0].textContent); // Output: One
+</script>
+```
+3. getElementsByTagName()
+```js
+const allParas = document.getElementsByTagName("p");
+```
+4. querySelector() and querySelectorAll()
+```html
+<div class="box">Hello</div>
+<script>
+  const el = document.querySelector(".box"); // First .box
+</script>
+```
+```js
+const allBoxes = document.querySelectorAll(".box"); // All .box
+```
+✏️ Modifying Content
+1. innerHTML – Change HTML inside an element
+```js
+document.getElementById("demo").innerHTML = "<b>New Text</b>";
+```
+2. textContent – Change only the text
+```js
+document.getElementById("demo").textContent = "Just text";
+```
+🎨 Changing Styles with JavaScript
+```js
+const btn = document.getElementById("myBtn");
+btn.style.color = "white";
+btn.style.backgroundColor = "blue";
+```
+🎮 Adding Events
+1. Using onclick
+```html
+<button onclick="alert('Clicked!')">Click Me</button>
+```
+2. Using addEventListener
+```js
+const btn = document.querySelector("#myBtn");
+btn.addEventListener("click", function () {
+  alert("Clicked!");
+});
+```
+🛠️ Creating and Appending Elements
+```js
+const newDiv = document.createElement("div");
+newDiv.textContent = "I am new!";
+document.body.appendChild(newDiv);
+```
+❌ Removing Elements
+```js
+const el = document.getElementById("removeMe");
+el.remove(); // Removes the element
+```
+### 🔄 DOM Practice Examples
+🧪 Practice 1: Change Text on Button Click
+```html
+<p id="text">Hello</p>
+<button onclick="changeText()">Click Me</button>
+
+<script>
+  function changeText() {
+    document.getElementById("text").textContent = "You clicked me!";
+  }
+</script>
+```
+🧪 Practice 2: Toggle Background Color
+```html
+<button id="toggleBtn">Toggle</button>
+
+<script>
+  const btn = document.getElementById("toggleBtn");
+
+  btn.addEventListener("click", function () {
+    document.body.style.backgroundColor =
+      document.body.style.backgroundColor === "yellow" ? "white" : "yellow";
+  });
+</script>
+```
+🧪 Practice 3: Add Items to a List
+```html
+<ul id="list"></ul>
+<button onclick="addItem()">Add Item</button>
+
+<script>
+  function addItem() {
+    const li = document.createElement("li");
+    li.textContent = "New Item";
+    document.getElementById("list").appendChild(li);
+  }
+</script>
+```
+### ✅ DOM Practice Assignments
+Create a form with name and age inputs. On clicking a button, show a greeting: “Hello [name], you are [age] years old.”
+
+Make a counter that increases or decreases on button click.
+
+Create a light switch: A button that toggles between black and white background and updates its label (ON/OFF).
+
+Build a Todo List:
+
+Add input and a button
+
+Add each new input to a list below
+
+Make each item removable
+---
+🧠 Summary
+Task	Method
+Select by ID	getElementById()
+Select by class	getElementsByClassName()
+Select one or many	querySelector() / querySelectorAll()
+Change content	innerHTML, textContent
+Change style	.style.property
+Listen to events	.addEventListener()
+Create element	document.createElement()
+Append element	parent.appendChild()
+Remove element	.remove()
 ---
 🛠️ Practice Project:
 Interactive Quiz App: Show questions, capture answers, show score.

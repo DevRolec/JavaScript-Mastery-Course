@@ -154,26 +154,7 @@ user.greet();
 🛠️ Practice Project:
 To-Do List App: Add/remove tasks, store tasks in an array.
 ---
-🧠 Module 4: DOM Manipulation (Browser Focus)
-
-✅ Topics:
-document.querySelector, getElementById
-
-Changing text, HTML, styles
-
-Event listeners (click, input, submit)
-
-Form handling
-
-🧠 Example:
-```js
-Copy
-Edit
-document.querySelector("button").addEventListener("click", () => {
-  alert("Button clicked!");
-});
-```
-## 📘 JavaScript Arrays – Full Lesson
+## Module 4 📘 JavaScript Arrays – Full Lesson
 🔹 What is an Array?
 An array is a special variable that can hold multiple values at once
 ```js
@@ -362,7 +343,7 @@ Sorts them alphabetically.
 
 Prints the sorted list using alert() or console.log().
 ---
-## 📘 JavaScript Objects – Full Lesson
+## Module 5 📘 JavaScript Objects – Full Lesson
 🔹 What is an Object?
 In JavaScript, an object is a data structure that lets you store key-value pairs.
 
@@ -520,7 +501,7 @@ function addUser(name, email) {
   users.push({ name, email, loginCount: 0 });
 }
 ```
-📘 JavaScript DOM (Document Object Model) Lesson
+## Module 6📘 JavaScript DOM (Document Object Model) Lesson
 ✅ What is the DOM?
 DOM stands for Document Object Model.
 
@@ -688,7 +669,7 @@ Remove element	.remove()
 🛠️ Practice Project:
 Interactive Quiz App: Show questions, capture answers, show score.
 ---
-## 🌐 Module 5: Advanced Functions & Scope
+## 🌐 Module 6: Advanced Functions & Scope
 
 ✅ Topics:
 Scope (global, block, function)
@@ -715,7 +696,7 @@ console.log(double(5)); // 10
 🛠️ Practice Project:
 Tip Calculator App: Calculates tip based on amount and service quality.
 ---
-⏳ Module 6: Asynchronous JavaScript
+⏳ Module 7: Asynchronous JavaScript
 Duration: 2 weeks
 
 ✅ Topics:
@@ -741,7 +722,7 @@ getData();
 🛠️ Practice Project:
 Weather App: Fetch weather info using an API and display it.
 ---
-## 🧱 Module 7: Object-Oriented Programming (OOP)
+## 🧱 Module 8: Object-Oriented Programming (OOP)
 
 ✅ Topics:
 Constructor functions and prototypes
@@ -752,8 +733,7 @@ Encapsulation and method overriding
 
 🧠 Example:
 ```js
-Copy
-Edit
+
 class Animal {
   constructor(name) {
     this.name = name;
